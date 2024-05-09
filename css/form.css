@@ -61,15 +61,4 @@
   margin-top: 1.25rem;
 }
 
-/* Media Query for Smaller Screens */
-@media (max-width: 48rem) {
-  .form-section {
-    flex-direction: column;
-    padding: 1.25rem;
-  }
 
-  .form-card {
-    width: 100%; 
-    margin: 0.625rem auto;
-  }
-}
