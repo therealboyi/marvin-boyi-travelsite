@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #335576; 
+}
+
+header {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: right;
+}
+
+.navbar__logo {
+  float: left;
+  margin-right: 1.25rem;
+}
+
+.navbar__link--logo {
+  text-decoration: none;
+  color: #335576;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.625rem 2.5rem;
+  display: inline-block;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.625rem;
+  display: block;
+}
+
+.navbar__link--active {
+  text-decoration: underline;
+  text-decoration-color: #db7a4e;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 0.625rem;
+  padding-bottom: 0.125rem;
+  color: #db7a4e;
+}
+
+.navbar__link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #fefaf5;
+  color: #335576;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-section {
+  text-align: left;
+  padding-left: 5%;
+  flex: 1;
+}
+
+.footer-section h3 {
+  margin: 0 0 0.625rem;
+}
+
+.footer-section p {
+  margin: 0.3125rem 0;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 5%;
+}
+
+.social-icon img {
+  width: 40%;
+  height: auto;
+}
+
+.highlight {
+  color: #db7a4e;
+  text-transform: uppercase;
+}
+
+.card:hover {
+  border-color: #db7a4e;
+}
+
+.card:hover .card__info {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive styles */
+@media (min-width: 80rem) and (max-width: 80rem) {
+  .container {
+    width: 80rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 80.0625rem) {
+  .container {
+    width: 80rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 79.9375rem) {
+  .container {
+    width: 100%;
+    padding: 0.625rem;
+  }
+}

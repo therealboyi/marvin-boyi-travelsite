@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hawaii</title>
+    <title>Get Started - Travel Site</title>
     <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/destination.css" />
+    <link rel="stylesheet" href="../css/form.css" />
   </head>
   <body>
     <header>
@@ -18,11 +18,7 @@
             <a href="../index.html" class="navbar__link">Home</a>
           </li>
           <li>
-            <a
-              href="../pages/hawaii.html"
-              class="navbar__link navbar__link--active"
-              >Hawaii</a
-            >
+            <a href="../pages/hawaii.html" class="navbar__link">Hawaii</a>
           </li>
           <li>
             <a href="../pages/iceland.html" class="navbar__link">Iceland</a>
@@ -34,42 +30,29 @@
       </nav>
     </header>
 
-    <main
-      style="
-        background: url('../assets/images/hawaii.jpg') no-repeat center center;
-        background-size: cover;
-      "
-    >
-      <h1 class="destination-title">Hawaii</h1>
-      <div class="itinerary-cards">
-        <div class="itinerary-card">
-          <h2>Friday</h2>
-          <ul>
-            <li>Breakfast</li>
-            <li>Lunch</li>
-            <li>Dinner</li>
-            <li>Snorkeling</li>
-          </ul>
-        </div>
-        <div class="itinerary-card">
-          <h2>Saturday</h2>
-          <ul>
-            <li>Breakfast</li>
-            <li>Lunch</li>
-            <li>Dinner</li>
-            <li>Snorkeling</li>
-          </ul>
-        </div>
-        <div class="itinerary-card">
-          <h2>Sunday</h2>
-          <ul>
-            <li>Breakfast</li>
-            <li>Lunch</li>
-            <li>Dinner</li>
-            <li>Snorkeling</li>
-          </ul>
-        </div>
-      </div>
+    <main>
+      <section class="form-section">
+        <h2>Get Started with Your Journey</h2>
+        <form action="submit-destination.php" method="POST">
+          <label for="destination">Choose Your Destination:</label>
+          <select id="destination" name="destination" required>
+            <option value="hawaii">Hawaii</option>
+            <option value="iceland">Iceland</option>
+            <option value="greece">Greece</option>
+          </select>
+
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </section>
     </main>
 
     <footer>

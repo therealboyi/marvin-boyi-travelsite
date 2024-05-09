@@ -1,0 +1,75 @@
+.get-started-title {
+  text-align: left;
+  color: #fff;
+  font-size: 3em;
+  margin-left: 0.625rem;
+  padding-top: 1.875rem;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 3.125rem;
+  background: white;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 1.25rem;
+}
+
+.form-card {
+  background-color: rgba(255, 255, 255, 1);
+  width: calc(50% - 1.25rem); 
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  margin: 0.625rem;
+  position: relative;
+}
+
+.form-card h2 {
+  color: #000000;
+  padding-bottom: 0.625rem;
+  border-bottom: 0.125rem solid #000000;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.form-card label {
+  font-size: 1em;
+  display: block;
+  margin-top: 1.25rem;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3125rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.form-card button {
+  background-color: #335576;
+  color: white;
+  padding: 0.625rem 0.9375rem;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  display: block;
+  margin-top: 1.25rem;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 48rem) {
+  .form-section {
+    flex-direction: column;
+    padding: 1.25rem;
+  }
+
+  .form-card {
+    width: 100%; 
+    margin: 0.625rem auto;
+  }
+}
