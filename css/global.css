@@ -6,7 +6,7 @@ body {
 h1,
 h2,
 h3 {
-  color: #335576; 
+  color: #335576;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .navbar {
@@ -122,26 +122,17 @@ footer {
   align-items: center;
 }
 
-/* Responsive styles */
-@media (min-width: 80rem) and (max-width: 80rem) {
-  .container {
-    width: 80rem;
-    margin: 0 auto;
-    padding: 1.25rem;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
-  }
+.container {
+  width: 100%;
+  padding: 10px;
 }
 
-@media (min-width: 80.0625rem) {
+/* Specific styles for exactly 1280px width */
+@media (min-width: 1280px) and (max-width: 1280px) {
   .container {
-    width: 80rem;
+    width: 1280px;
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 79.9375rem) {
-  .container {
-    width: 100%;
-    padding: 0.625rem;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
